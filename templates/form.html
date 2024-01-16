@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Form</title>
+    {% include "bootstrap.html" %}
+    <link rel="stylesheet" href="../static/app_style.css">
+</head>
+<body>
+{% include "nav.html" %}
+<br>
+<div class="main_content">
+<h1>Web Form</h1>
+<main id="main">
+<hr>
+<h2>Input Thoughts</h2>
+    <div class="user_text_form"> <!-- user text div -->
+      <form method="post" action="/form">
+      <label for="user_text">User Data: Simple Text </label><br>
+      <input type="text" id="user_text" name="user_text" placeholder="User text"><br>
+      <input type="submit" value="Submit">
+      </form>
+    </div> <!-- end user text div -->
+<hr>
+    <h2>Demo: Latest Query or Input</h2>
+    <p>Data from the last submission:</p>
+    <div class="data_from_function">
+        <article>
+            {{ last_request }} </article>
+        <hr>
+        {% include "footer.html" %}
+        </div>
+</main>
+</div><!-- end div main_content -->
+</body>
+</html>

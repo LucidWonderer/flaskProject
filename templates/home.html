@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Home</title>
+    {% include "bootstrap.html" %}
+    <link rel="stylesheet" href="../static/app_style.css">
+</head>
+<body>
+{% include "nav.html" %}
+{% include "bootstrap.html" %}
+<br>
+<div class="main_content" >
+<h1>App Home </h1>
+<main id="main">
+<hr>
+<h2>Release your thoughts</h2>
+
+    <p>Complete "Web Form" to submit a poem & "Web Data" to view all submissions :)</p>
+    <div class="data_from_function">
+        <article>
+            {{ app_data }} </article>
+        <hr>
+        <a href="/form" class="btn btn-outline-secondary btn-lg">Web Form</a>
+        <a href="/data" class="btn btn-outline-secondary btn-lg">Web Data</a>
+        </div> <!-- end feedback div -->
+
+</main>
+</div><!-- end div main_content -->
+</body>
+</html>

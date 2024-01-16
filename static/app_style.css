@@ -1,0 +1,126 @@
+/*  CSS for Flask Application  */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body {
+  background-color: #f5f5f5;
+}
+
+.main_content {
+  padding: 25px;
+  margin: 25px 50px 0 50px;
+  box-shadow: 4px 3px darkgray;
+  background-color: #FFF;
+  width: 75%;
+  align-content: center;
+  opacity: 85%;
+  animation:breath 10s  linear infinite;
+}
+@keyframes breath{
+		0%{transform: scale(.97);}
+		25%{transform: scale(.99);}
+		60%{transform: scale(.97);}
+		100%{transform: scale(.99);}
+	}
+article{
+    font-size: larger;
+}
+
+footer {
+  margin: 50px;
+}
+.user_text_form {
+  margin-left: 150px;
+}
+
+.data_from_function {
+    margin: 25px;
+    border: 3px solid #1936ee;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+/* Nav Bar from w3 Schools
+https://www.w3schools.com/CSS/tryit.asp?filename=trycss_navbar_horizontal_gray
+*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li
+{
+  float: left;
+}
+
+li a
+{
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #04AA6D;
+}
+
+body
+{
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0;background-size:2750px;}
+
+}
+
+.center
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
+}
+.center h1{
+  text-align:center;
+  color:white;
+  font-family: 'Source Code Pro', monospace;
+  text-transform:uppercase;
+}
